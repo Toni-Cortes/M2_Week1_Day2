@@ -1,14 +1,13 @@
-
-function ProductList(){
-
-    return(
-        <div>
-        <h2>Product Title</h2>
-        <img src="imageSrc" alt="" />
-        <p>Price:$</p>
+function ProductList(props) {
+  return (
+    <div>
+      <div className="product">
+        <h2>{props.title}</h2>
+        <img src={props.imgLink} alt='' />
+        <p>{props.price}</p>
       </div>
-    )
+    </div>
+  );
 }
 
-
-export default ProductList
+export default ProductList;

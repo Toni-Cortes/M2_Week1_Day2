@@ -7,21 +7,15 @@ import ProductList from "./components/ProductList"
 function App() {
 
   return (
-    <div id="main-container">
-     {/* <HelloName name="Judi" city="Netherlands" pictureSrc="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"></HelloName>
-     <HelloName name="Daniel" city="Barcelona"></HelloName>
-     <HelloName name="Toni"></HelloName> */}
-
-     {/* <Weather city="Barcalona"></Weather>
-     <Weather city="Houston"></Weather>
-     <Weather city="Paris"></Weather> */}
-
-     <ProductList></ProductList>
-     <ProductList></ProductList>
-     <ProductList></ProductList>
-
+    <div className='main-container'>
+      <div className="product-container">
+        <ProductList title='Wireless Headphones' price={6} imgLink='https://m.media-amazon.com/images/I/61TXenWNoQL._AC_SX679_.jpg'> </ProductList>
+        <ProductList title='Smartwatch' price={8} imgLink='https://m.media-amazon.com/images/I/61yZgFFL0iL._AC_SX679_.jpg'></ProductList>
+        <ProductList title='Bluetooth Speaker' price={4} imgLink='https://m.media-amazon.com/images/I/61+sKi1viEL._AC_SX569_.jpg'></ProductList>
+      </div>
     </div>
-  )
+  );
 }
+
 
 export default App
